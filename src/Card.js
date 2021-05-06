@@ -1,7 +1,6 @@
 import './Card.scss';
 import {Link} from 'react-router-dom';
 import {useState} from 'react';
-import {BrowserRouter} from 'react-router-dom/BrowserRouter'
 
 const ProList = (
     <div id='pro'>
@@ -14,9 +13,7 @@ const ProList = (
                 <a href='https://github.com/qtran09' target='_blank' rel='noreferrer'>Github</a>
             </li>
             <li>
-                <BrowserRouter basename={process.env.PUBLIC_URL}>
-                    <Link to='/developer' target='_blank' rel='noreferrer'>Developer Overview</Link>
-                </BrowserRouter>
+                <Link to='/developer' target='_blank' rel='noreferrer'>Developer Overview</Link>
             </li>
         </ul>
     </div>
